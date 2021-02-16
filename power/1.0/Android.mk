@@ -19,7 +19,7 @@ LOCAL_JAVA_LIBRARIES := \
 #
 # Build types.hal (LineageFeature)
 #
-GEN := $(intermediates)/vendor/aosip/power/V1_0/LineageFeature.java
+GEN := $(intermediates)/vendor/zero/power/V1_0/LineageFeature.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -28,7 +28,7 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/aosip/interfaces \
+        -rvendor.lineage:hardware/zero/interfaces \
         vendor.lineage.power@1.0::types.LineageFeature
 
 $(GEN): $(LOCAL_PATH)/types.hal
@@ -38,7 +38,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (LineagePowerHint)
 #
-GEN := $(intermediates)/vendor/aosip/power/V1_0/LineagePowerHint.java
+GEN := $(intermediates)/vendor/zero/power/V1_0/LineagePowerHint.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -47,7 +47,7 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/aosip/interfaces \
+        -rvendor.lineage:hardware/zero/interfaces \
         vendor.lineage.power@1.0::types.LineagePowerHint
 
 $(GEN): $(LOCAL_PATH)/types.hal
@@ -68,7 +68,7 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/aosip/interfaces \
+        -rvendor.lineage:hardware/zero/interfaces \
         vendor.lineage.power@1.0::ILineagePower
 
 $(GEN): $(LOCAL_PATH)/ILineagePower.hal
@@ -94,7 +94,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 #
 # Build types.hal (LineageFeature)
 #
-GEN := $(intermediates)/vendor/aosip/power/V1_0/LineageFeature.java
+GEN := $(intermediates)/vendor/zero/power/V1_0/LineageFeature.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -103,7 +103,7 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/aosip/interfaces \
+        -rvendor.lineage:hardware/zero/interfaces \
         vendor.lineage.power@1.0::types.LineageFeature
 
 $(GEN): $(LOCAL_PATH)/types.hal
@@ -113,7 +113,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build types.hal (LineagePowerHint)
 #
-GEN := $(intermediates)/vendor/aosip/power/V1_0/LineagePowerHint.java
+GEN := $(intermediates)/vendor/zero/power/V1_0/LineagePowerHint.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/types.hal
@@ -122,7 +122,7 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/aosip/interfaces \
+        -rvendor.lineage:hardware/zero/interfaces \
         vendor.lineage.power@1.0::types.LineagePowerHint
 
 $(GEN): $(LOCAL_PATH)/types.hal
@@ -132,7 +132,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 #
 # Build ILineagePower.hal
 #
-GEN := $(intermediates)/vendor/aosip/power/V1_0/ILineagePower.java
+GEN := $(intermediates)/vendor/zero/power/V1_0/ILineagePower.java
 $(GEN): $(HIDL)
 $(GEN): PRIVATE_HIDL := $(HIDL)
 $(GEN): PRIVATE_DEPS := $(LOCAL_PATH)/ILineagePower.hal
@@ -143,7 +143,7 @@ $(GEN): PRIVATE_CUSTOM_TOOL = \
         $(PRIVATE_HIDL) -o $(PRIVATE_OUTPUT_DIR) \
         -Ljava \
         -randroid.hidl:system/libhidl/transport \
-        -rvendor.lineage:hardware/aosip/interfaces \
+        -rvendor.lineage:hardware/zero/interfaces \
         vendor.lineage.power@1.0::ILineagePower
 
 $(GEN): $(LOCAL_PATH)/ILineagePower.hal
